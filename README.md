@@ -35,10 +35,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/jLUJrxd.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with GIFSKI but uploaded to IMGUR  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -47,8 +47,9 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
-* trying to fogure out where to place the "enter button" and 
+* trying to figure out where to place the "enter button" and 
 "visible text" to showcase the correct word after the total number of tries have taken place
+**figured out my error for the above issue!!
 
 ## License
 
