@@ -80,38 +80,23 @@ class MainActivity : AppCompatActivity() {
           val toCheck3 = guess3.text.toString().uppercase()
           val guess3answer = checkAnswer(toCheck3)
           guess3Hint.text = guess3answer
+          guesses++
           if (guess3Hint.text == "OOOO") {
             Toast.makeText(this, "$seek", Toast.LENGTH_LONG).show()
             answer.visibility = View.VISIBLE
             textView.text = findViewById<TextView>(R.id.answer).toString()
+          } else {
+            Toast.makeText(this, "$seek", Toast.LENGTH_LONG).show()
+            answer.visibility = View.VISIBLE
+            enterbutton.setOnClickListener {
+              textView.text = findViewById<TextView>(R.id.answer).toString()
+            }
           }
-        }
-
-        else
-          enterbutton.setOnClickListener {
-          // Get the input from the input layout.
-          val userInput = findViewById<EditText>(textInputEditText4)
-
-          answer.visibility = View.VISIBLE
-          enterbutton.visibility = View.INVISIBLE
-          enterbutton.setOnClickListener {
-
-          }
-          enterbutton.setOnClickListener {
-            textView.text = findViewById<TextView>(R.id.answer).toString()
-          }
-
-          enterbutton.visibility = View.INVISIBLE
-
-          Toast.makeText(this, "$seek", Toast.LENGTH_LONG).show()
-          answer.visibility = View.VISIBLE
-          enterbutton.setOnClickListener {
-            textView.text = findViewById<TextView>(R.id.answer).toString()
-          }
-        }
         }
       }
+        }
       }
+      //}
 
       // author: calren
       object FourLetterWordList {
