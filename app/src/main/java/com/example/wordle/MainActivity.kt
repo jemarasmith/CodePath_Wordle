@@ -88,14 +88,30 @@ class MainActivity : AppCompatActivity() {
           } else {
             Toast.makeText(this, "$seek", Toast.LENGTH_LONG).show()
             answer.visibility = View.VISIBLE
-            enterbutton.setOnClickListener {
-              textView.text = findViewById<TextView>(R.id.answer).toString()
+            if (guesses == 3){
+              enterbutton.isEnabled = false
+              Toast.makeText(this, "You've exceeded your number of tries", Toast.LENGTH_SHORT).show()
+              answer.visibility = View.VISIBLE
+              enterbutton.setOnClickListener {
+                textView.text = findViewById<TextView>(R.id.answer).toString()
+              }
+            }
+//            enterbutton.setOnClickListener {
+//              textView.text = findViewById<TextView>(R.id.answer).toString()
             }
           }
         }
+//        else if (guesses == 3){
+//            enterbutton.isEnabled = false
+//            Toast.makeText(this, "You've exceeded your number of tries", Toast.LENGTH_SHORT).show()
+//            answer.visibility = View.VISIBLE
+//          enterbutton.setOnClickListener {
+//            textView.text = findViewById<TextView>(R.id.answer).toString()
+//          }
+//        }
       }
         }
-      }
+
       //}
 
       // author: calren
